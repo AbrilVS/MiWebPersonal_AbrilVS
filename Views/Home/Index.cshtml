@@ -2,7 +2,64 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<body>
+    <main class="main-index">
+        <img src="images/nuevobanner.png" alt="No se puede ver la imagen, disculpe">
+        <h1>¡Bienvenido a Buenos Aires!</h1>
+        <section>
+            <p>
+                Buenos Aires, la vibrante capital de Argentina,
+                cautiva a los viajeros con su mezcla única de elegancia europea y pasión latina.
+                Desde sus icónicos barrios hasta su rica historia y cultura,
+                esta ciudad ofrece una experiencia turística inolvidable.
+            </p>
+            <p>
+                Bienvenido a Buenos Aires, una ciudad que cautiva con su arquitectura monumental y su espíritu
+                vibrante.
+                Desde el esplendor neoclásico hasta la modernidad audaz, cada esquina de esta metrópolis
+                cuenta una historia fascinante.
+            </p>
+            <p> Es una ciudad que encanta con su encanto histórico, su pasión por el arte y
+                la cultura, y su estilo de vida único. Ya sea explorando sus barrios pintorescos,
+                deleitándote con su deliciosa gastronomía o sumergiéndote en su vibrante escena nocturna, cada
+                rincón de esta metrópolis te invita a descubrir la magia que la hace tan especial.
+                ¡Prepárate para una experiencia inolvidable en la tierra del tango y el asado!
+            </p>
+        </section>
+        <div class="preview-index">
+                <h2>Vive una aventura completa</h2>
+                <p>Reserva estas experiencias para disfrutar de una mirada cercana a Buenos Aires.</p>
+            <div>
+                <div>
+                     <a href='@Url.Action("Hoteles","Home")' title="#Hoteles.cshtml">Hoteles</a>
+                        <img src="images/HotelesPreview.png">
+                        <p>Ozen Hotel Bolifushi-Luxury All Inclusive</p>
+                    </a>
+                </div>
+                <div>
+                     <a href='@Url.Action("Entretenimiento","Home")' title="#Entretenimiento.cshtml">Entretenimiento</a>
+                        <img src="images/EntretenimientoPreview.png">
+                        <p>Buenos Aires City Tour Privado con Guía</p>
+                    </a>
+                </div>
+                <div>
+                     <a href='@Url.Action("Restaurantes","Home")' title="#Restaurantes.cshtml">Restaurantes</a>
+                        <img src="images/RestaurantesPreview.png">
+                        <p>Cena y espectáculo de tango porteño</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <section class="video-index">
+            <h2>Video turístico sobre Buenos Aires:</h2>
+            <iframe src="https://www.youtube.com/embed/aScS1YVZoBA?si=bX42mtLX0xMYAmSP" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+            <a href="https://humanidades.com/buenos-aires/">Para más información</a>
+        </section>
+
+    </main>
+</body>
+

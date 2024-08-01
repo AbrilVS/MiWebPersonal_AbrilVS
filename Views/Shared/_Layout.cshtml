@@ -3,43 +3,60 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - algo</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/algo.styles.css" asp-append-version="true" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">algo</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+       <div>
+            <img src="/images/logodefinitivo.png" alt="No se puede ver la imagen, disculpe">
+            <h2>TRAVELAWORLD</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href='@Url.Action("Index","Home")' title="#Index.cshtml">Inicio</a></li>
+                <li><a href='@Url.Action("Restaurantes","Home")' title="#Restaurantes.cshtml">Restaurantes</a></li>
+                <li><a href='@Url.Action("Hoteles","Home")' title="#Hoteles.cshtml">Hoteles</a></li>
+                <li><a href='@Url.Action("Entretenimiento","Home")' title="#Entretenimiento.cshtml">Entretenimiento</a></li>
+                <li><a href='@Url.Action("Eleccion","Home")' title="#Eleccion.cshtml">Eleccion</a>
+                </li>
+            </ul>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
+
+    <div>
+        <main role="main">
             @RenderBody()
         </main>
     </div>
+    <footer>
+        <section>
+            <div>
+                <h2>Llamanos:</h2>
+                <p>El Centro de Información para los Visitantes de TravelAWorld está disponible:</p>
+                <ul>
+                    <li>Lunes a Viernes: de 7:30 a 00 hs</li>
+                    <li>Sábados y domingos: de 7:30 a 22 hs</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Visitanos en:</h2>
+                <div>
+                    <a href="https://www.instagram.com/informatica_ort/"><img src="/images/instagram.svg"></a>
+                    <a href="https://www.facebook.com/ortargentina/?locale=es_LA"><img src="/images/facebook.svg"></a>
+                    <a href="https://x.com/ORTArgentina?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="/images/twitter.svg"></a>
+                </div>
+            </div>
+        </section>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - algo - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
+        <marquee behavior="scroll" direction="left" scrollamount="5">
+            &copy; 2024 TravelAWorld. Todos los derechos reservados.
+        </marquee>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

@@ -18,6 +18,24 @@ public class HomeController : Controller
         return View();
     }
 
+    public IActionResult Restaurantes()
+    {
+        return View();
+    }
+
+    public IActionResult Hoteles()
+    {
+        return View();
+    }
+    public IActionResult Entretenimiento()
+    {
+        return View();
+    }
+    public IActionResult Eleccion()
+    {
+        return View();
+    }
+
     public IActionResult Privacy()
     {
         return View();
