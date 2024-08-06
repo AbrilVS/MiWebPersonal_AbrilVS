@@ -1,15 +1,12 @@
-public class Eleccion{
+public static class Elecciones{
     //Propiedades
-    public string Hotel {get; private set;}
-    public string Restaurante {get; private set;}
-    public string Entretenimiento {get; private set;}
+    public static List< string > ListaTitulos {get; set;} = new List<string>{"Hoteles", "Entretenimiento","Restaurantes"};
 
-    
-    //Constructor
-    public Eleccion (){ }
-    public Eleccion (string hotel, string restaurante, string entretenimiento){
-        Hotel = hotel;
-        Restaurante = restaurante;
-        Entretenimiento = entretenimiento;
-    }
+    public static List < string > ListaFotos {get; set;} = new List<string>{"HotelesPreview.png", "EntretenimientoPreview.png","RestaurantesPreview.png"};
+
+    public static List < string > ListaBio {get;  set;} = new List<string>{"Ozen Hotel Bolifushi-Luxury All Inclusive",
+     "Buenos Aires City Tour Privado con Guía",
+     "Cena y espectáculo de tango porteño", 
+    };
+
 }

@@ -4,8 +4,10 @@ using algo.Models;
 
 namespace algo.Controllers;
 
+
 public class HomeController : Controller
 {
+    
     private readonly ILogger<HomeController> _logger;
 
     public HomeController(ILogger<HomeController> logger)
@@ -15,7 +17,10 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        return View();
+        ViewBag.ListaTitulos = Elecciones.ListaTitulos;
+        ViewBag.ListaFotos = Elecciones.ListaFotos;
+        ViewBag.ListaBio = Elecciones.ListaBio;
+        return View("Index");
     }
 
     public IActionResult Restaurantes()
@@ -33,9 +38,10 @@ public class HomeController : Controller
     }
     public IActionResult Eleccion()
     {
+        
         return View();
     }
-
+    
     public IActionResult Privacy()
     {
         return View();

@@ -30,24 +30,14 @@
                 <h2>Vive una aventura completa</h2>
                 <p>Reserva estas experiencias para disfrutar de una mirada cercana a Buenos Aires.</p>
             <div>
+                @for (int i = 0; i < 3; i++)
+                {
                 <div>
-                     <a href='@Url.Action("Hoteles","Home")' title="#Hoteles.cshtml">Hoteles</a>
-                        <img src="images/HotelesPreview.png">
-                        <p>Ozen Hotel Bolifushi-Luxury All Inclusive</p>
-                    </a>
+                    <a>@ViewBag.ListaTitulos[i]</a>
+                    <img src="/images/@ViewBag.ListaFotos[i]">
+                    <p>@ViewBag.ListaBio[i]</p>
                 </div>
-                <div>
-                     <a href='@Url.Action("Entretenimiento","Home")' title="#Entretenimiento.cshtml">Entretenimiento</a>
-                        <img src="images/EntretenimientoPreview.png">
-                        <p>Buenos Aires City Tour Privado con Guía</p>
-                    </a>
-                </div>
-                <div>
-                     <a href='@Url.Action("Restaurantes","Home")' title="#Restaurantes.cshtml">Restaurantes</a>
-                        <img src="images/RestaurantesPreview.png">
-                        <p>Cena y espectáculo de tango porteño</p>
-                    </a>
-                </div>
+                }
             </div>
         </div>
         <section class="video-index">
