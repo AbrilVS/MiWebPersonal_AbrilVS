@@ -141,5 +141,20 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6568.17853892392!2d-58.38896474609376!3d-34.6019041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc86feac62fb3%3A0x482fc4977f2c5f44!2sBuenos%20Aires%20Marriott!5e0!3m2!1ses!2sar!4v1718762300702!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
+        
+        <div class="preview-index">
+                <h2>Otros hoteles similares</h2>
+                <p>Algunos hoteles seleccionados en distintos lugares para vivir una maravillosa experiencia</p>
+            <div>
+                @for (int i = 3; i < 6; i++)
+                {
+                <div>
+                    <a></a>
+                    <img src="/images/@ViewBag.ListaFotos[i]">
+                    <p>@ViewBag.ListaBio[i]</p>
+                </div>
+                }
+        </div>
+
     </main>
     </body>

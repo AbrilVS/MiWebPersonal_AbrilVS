@@ -25,23 +25,24 @@ public class HomeController : Controller
 
     public IActionResult Restaurantes()
     {
+        ViewBag.ListaFotos = Elecciones.ListaFotos;
+        ViewBag.ListaBio = Elecciones.ListaBio;
         return View();
     }
 
     public IActionResult Hoteles()
     {
+        ViewBag.ListaFotos = Elecciones.ListaFotos;
+        ViewBag.ListaBio = Elecciones.ListaBio;
         return View();
     }
     public IActionResult Entretenimiento()
     {
+        ViewBag.ListaFotos = Elecciones.ListaFotos;
+        ViewBag.ListaBio = Elecciones.ListaBio;
         return View();
     }
-    public IActionResult Eleccion()
-    {
-        
-        return View();
-    }
-    
+   
     public IActionResult Privacy()
     {
         return View();

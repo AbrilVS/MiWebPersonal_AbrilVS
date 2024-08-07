@@ -98,7 +98,7 @@ html {
   flex-direction: row;
 }
 .preview-index div div{
-  width:30%;
+  width:100%;
   padding:1%;
   display: flex;
   flex-direction: column;
@@ -133,6 +133,41 @@ html {
   margin-top: 1%;
   font-family: Lovelo;
   color: rgb(126, 88, 38);
+}
+
+/*Preview de otros hoteles, entretenimientos y restaurantes*/
+.preview-otros h2{
+  color: rgb(236, 135, 68);
+  margin:1%;
+  font-family: "Poppins", sans-serif;
+}
+.preview-otros p{
+  margin-left:1%;
+  margin-bottom:1%;
+  font-family: "Poppins", sans-serif;
+}
+.preview-otros div{
+  width:99%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.preview-otros div div{
+  width:30%;
+  padding:1%;
+  display: flex;
+  flex-direction: row;
+}
+.preview-otros div div:hover{
+  cursor: pointer;
+  opacity: .85;
+}
+
+.preview-otros div div img{
+  border-radius: 5px;
+}
+.preview-otros div div p{
+  font-family: "Poppins", sans-serif;
 }
 
 /*MAIN-RESTAURANTES-HOTELES*/
@@ -214,7 +249,7 @@ html {
 }
 .main-restaurantes-hoteles div div div{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 .main-restaurantes-hoteles section div div div img{
   width:4%;

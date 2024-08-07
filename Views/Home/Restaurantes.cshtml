@@ -248,5 +248,20 @@
             <p>NO LO RECOMIENDO PARA NADA, ME ENCONTRÉ UN PELO EN MI COMIDA Y NI ME DEVOLVIERON LA PLATA, NO VAYAN! &#x1F621;	</p>
         </div>
     </section>
+
+     <div class="preview-index">
+                <h2>Otros restaurantes similares</h2>
+                <p>Algunos hoteles seleccionados en distintos lugares para vivir una maravillosa experiencia</p>
+            <div>
+                @for (int i = 3; i < 6; i++)
+                {
+                <div>
+                    <a></a>
+                    <img src="/images/@ViewBag.ListaFotos[i]">
+                    <p>@ViewBag.ListaBio[i]</p>
+                </div>
+                }
+        </div>
+
 </main>
 </body>
