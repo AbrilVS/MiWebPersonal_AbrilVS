@@ -38,8 +38,6 @@ public class HomeController : Controller
     }
     public IActionResult Entretenimiento()
     {
-        ViewBag.ListaFotos = Elecciones.ListaFotos;
-        ViewBag.ListaBio = Elecciones.ListaBio;
         return View();
     }
    
